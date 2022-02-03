@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GGDROP</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./style/general.css">
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+    <!-- header -->
+
+    <header class="header">
+        <div class="header__container">
+            <div class="header__inner">
+
+                <!-- aside section -->
+
+                <div class="header__aside">
+                    <a href="index.html" class="header__logo">
+                        <img src="./img/logo.png" alt="logo">
+                    </a>
+                    <a href="#" class="header__bonuses">
+                        <div class="bonuses__basket">
+                            <img src="./img/basket.png" alt="basket">
+                            <span class="bonuses__counter" id="bonuses__counter">3</span>
+                        </div>
+                        <p class="bonuses__text">bonuses</p>
+                    </a>
+                </div>
+
+                <!-- main section -->
+
+                <div class="header__main">
+
+                    <!-- top header's section -->
+
+                    <div class="header__section--top">
+                        <div class="header__section__wrapper">
+                            <div class="header__lang">
+                                <img class="header__lang__img" src="./img/flags.png" alt="ENG">
+                                <div class="header__lang__item">EN</div>
+                                <img class="header__lang__arrow" src="./img/arrowDown.png" alt="arrowDown">
+
+                                <ul class="lang__list">
+                                    <li class="lang__item">
+                                        <img class="header__lang__img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Flag_of_Ukraine.svg/2560px-Flag_of_Ukraine.svg.png" alt="ENG">
+                                        <div class="header__lang__item">UKR</div>
+                                    </li>
+                                    <li class="lang__item">
+                                        <img class="header__lang__img" src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Flag_of_Russia.png" alt="ENG">
+                                        <div class="header__lang__item">RU</div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            
+
+                            <div class="header__volume border">
+                                <img src="./img/soundOn.png" alt="soundOn">
+                            </div>
+
+                            <ul class="stats__list">
+                                <li class="stats__item">
+                                    <div>
+                                        <img class="stats__item-img" src="./img/online.png" alt="online">
+                                    </div>
+                                    <div class="stats__box">
+                                        <p class="stats__item-number">3 890</p>
+                                        <p class="stats__item-text">online</p>
+                                    </div>
+                                </li>
+                                <li class="stats__item">
+                                    <div>
+                                        <img class="stats__item-img" src="./img/casesOpen.png" alt="CasesOpen">
+                                    </div>
+                                    <div class="stats__box">
+                                        <p class="stats__item-number">506 860</p>
+                                        <p class="stats__item-text">cases open</p>
+                                    </div>
+                                </li>
+                                <li class="stats__item">
+                                    <div>
+                                        <img class="stats__item-img" src="./img/contracts.png" alt="Contracts">
+                                    </div>
+                                    <div class="stats__box">
+                                        <p class="stats__item-number">46 809</p>
+                                        <p class="stats__item-text">contracts</p>
+                                    </div>
+                                </li>
+                                <li class="stats__item">
+                                    <div>
+                                        <img class="stats__item-img" src="./img/upgrades.png" alt="Upgrades">
+                                    </div>
+                                    <div class="stats__box">
+                                        <p class="stats__item-number">109 088</p>
+                                        <p class="stats__item-text">upgrades</p>
+                                    </div>
+                                </li>
+                                <li class="stats__item">
+                                    <div>
+                                        <img class="stats__item-img" src="./img/battles.png" alt="Battles">
+                                    </div>
+                                    <div class="stats__box">
+                                        <p class="stats__item-number">30 899</p>
+                                        <p class="stats__item-text">battles</p>
+                                    </div>
+                                </li>
+                                <li class="stats__item">
+                                    <div>
+                                        <img class="stats__item-img" src="./img/users.png" alt="Users">
+                                    </div>
+                                    <div class="stats__box">
+                                        <p class="stats__item-number">1 068 448</p>
+                                        <p class="stats__item-text">users</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <ul class="contacts__list">
+                            <li class="contacts__item">
+                                <a href="#">
+                                    <img src="./img/telegram.png" alt="telegram">
+                                </a>
+                            </li>
+                            <li class=" contacts__item">
+                                <a href="#">
+                                    <img src="./img/vk.png" alt="vk">
+                                </a>
+                            </li>
+                            <li class="contacts__item">
+                                <a href="#">
+                                    <img src="./img/instagram.png" alt="instagram">
+                                </a>
+                            </li>
+                            <li class="contacts__item">
+                                <a href="#">
+                                    <img src="./img/youtube.png" alt="youtube">
+                                </a>
+                            </li>
+                            <li class="contacts__item">
+                                <a href="#">
+                                    <img src="./img/twitter.png" alt="twitter">
+                                </a>
+                            </li>
+                            <li class="contacts__item">
+                                <a href="#">
+                                    <img src="./img/facebook.png" alt="facebook">
+                                </a>
+                            </li>
+                            <li class="contacts__item">
+                                <a href="#">
+                                    <img src="./img/tiktok.png" alt="tiktok">
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <!-- middle header's section -->
+
+                    <div class="header__section--middle swiper">
+                        <ul class="weapon__list swiper-wrapper">
+                            <li class="weapon__item yellow swiper-slide">
+                                <div class="weapon__logo"></div>
+                                <div class="weapon__box">
+                                    <p class="weapon__model">MAC-10</p>
+                                    <p class="weapon__name">Hypnotic</p>
+                                </div>
+                                <img src="./img/weapon/weapon_5.png" alt="Gunsmoke" class="weapon__img">
+                                <div class="weapon__item--hovered">
+                                    <img src="./img/weapon/not-active.png" alt="blocked">
+                                    <p class="weapon__user">Marshmello</p>
+                                </div>
+                            </li>
+                            <li class="weapon__item yellow swiper-slide">
+                                <div class="weapon__logo"></div>
+                                <div class="weapon__box">
+                                    <p class="weapon__model">Spectral Shiv</p>
+                                    <p class="weapon__name">Copper</p>
+                                </div>
+                                <img src="./img/weapon/weapon_5.png" alt="Gunsmoke" class="weapon__img">
+                                <div class="weapon__item--hovered">
+                                    <img src="./img/weapon/not-active.png" alt="blocked">
+                                    <p class="weapon__user">Marshmello</p>
+                                </div>
+                            </li>
+                            <li class="weapon__item swiper-slide">
+                                <div class="weapon__logo"></div>
+                                <div class="weapon__box">
+                                    <p class="weapon__model">Spectral Shiv</p>
+                                    <p class="weapon__name">Copper</p>
+                                </div>
+                                <img src="./img/weapon/weapon_5.png" alt="Gunsmoke" class="weapon__img">
+                                <div class="weapon__item--hovered">
+                                    <img src="./img/weapon/not-active.png" alt="blocked">
+                                    <p class="weapon__user">Marshmello</p>
+                                </div>
+                            </li>
+                            <li class="weapon__item red swiper-slide">
+                                <div class="weapon__logo"></div>
+                                <div class="weapon__box">
+                                    <p class="weapon__model">Tec-9</p>
+                                    <p class="weapon__name">Gunsmoke</p>
+                                </div>
+                                <img src="./img/weapon/weapon_2.png" alt="Gunsmoke" class="weapon__img">
+                                <div class="weapon__item--hovered">
+                                    <img src="./img/weapon/not-active.png" alt="blocked">
+                                    <p class="weapon__user">Marshmello</p>
+                                </div>
+                            </li>
+                            <li class="weapon__item swiper-slide">
+                                <div class="weapon__logo"></div>
+                                <div class="weapon__box">
+                                    <p class="weapon__model">MP7</p>
+                                    <p class="weapon__name">Dark Age</p>
+                                </div>
+                                <img src="./img/weapon/weapon_3.png" alt="Gunsmoke" class="weapon__img">
+                                <div class="weapon__item--hovered">
+                                    <img src="./img/weapon/not-active.png" alt="blocked">
+                                    <p class="weapon__user">Marshmello</p>
+                                </div>
+                            </li>
+                            <li class="weapon__item swiper-slide">
+                                <div class="weapon__logo"></div>
+                                <div class="weapon__box">
+                                    <p class="weapon__model">AK-47</p>
+                                    <p class="weapon__name">Jungle Tiger</p>
+                                </div>
+                                <img src="./img/weapon/weapon_4.png" alt="Gunsmoke" class="weapon__img">
+                                <div class="weapon__item--hovered">
+                                    <img src="./img/weapon/not-active.png" alt="blocked">
+                                    <p class="weapon__user">Marshmello</p>
+                                </div>
+                            </li>
+                            <li class="weapon__item green swiper-slide">
+                                <div class="weapon__logo"></div>
+                                <div class="weapon__box">
+                                    <p class="weapon__model">Talon Knife</p>
+                                    <p class="weapon__name">Hive</p>
+                                </div>
+                                <img src="./img/weapon/weapon_5.png" alt="Gunsmoke" class="weapon__img">
+                                <div class="weapon__item--hovered">
+                                    <img src="./img/weapon/not-active.png" alt="blocked">
+                                    <p class="weapon__user">Marshmello</p>
+                                </div>
+                            </li>
+                            <li class="weapon__item blue swiper-slide">
+                                <div class="weapon__logo"></div>
+                                <div class="weapon__box">
+                                    <p class="weapon__model">Five-SeveN</p>
+                                    <p class="weapon__name">Vulcan </p>
+                                </div>
+                                <img src="./img/weapon/weapon_6.png" alt="Gunsmoke" class="weapon__img">
+                                <div class="weapon__item--hovered">
+                                    <img src="./img/weapon/not-active.png" alt="blocked">
+                                    <p class="weapon__user">Marshmello</p>
+                                </div>
+                            </li>
+                            <li class="weapon__item blue swiper-slide">
+                                <div class="weapon__logo"></div>
+                                <div class="weapon__box">
+                                    <p class="weapon__model">Galil AR</p>
+                                    <p class="weapon__name">Tornado</p>
+                                </div>
+                                <img src="./img/weapon/weapon_7.png" alt="Gunsmoke" class="weapon__img">
+                                <div class="weapon__item--hovered">
+                                    <img src="./img/weapon/not-active.png" alt="blocked">
+                                    <p class="weapon__user">Marshmello</p>
+                                </div>
+                            </li>
+                            <li class="weapon__item yellow swiper-slide">
+                                <div class="weapon__logo"></div>
+                                <div class="weapon__box">
+                                    <p class="weapon__model">Ursus Knife</p>
+                                    <p class="weapon__name">Sand Mesh </p>
+                                </div>
+                                <img src="./img/weapon/weapon_8.png" alt="Gunsmoke" class="weapon__img">
+                                <div class="weapon__item--hovered">
+                                    <img src="./img/weapon/not-active.png" alt="blocked">
+                                    <p class="weapon__user">Marshmello</p>
+                                </div>
+                            </li>
+                            <li class="weapon__item purple swiper-slide">
+                                <div class="weapon__logo"></div>
+                                <div class="weapon__box">
+                                    <p class="weapon__model">Huntsman Knife</p>
+                                    <p class="weapon__name">Desert Warfare</p>
+                                </div>
+                                <img src="./img/weapon/weapon_9.png" alt="Gunsmoke" class="weapon__img">
+                                <div class="weapon__item--hovered">
+                                    <img src="./img/weapon/not-active.png" alt="blocked">
+                                    <p class="weapon__user">Marshmello</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- bottom header's section -->
+
+                    <div class="header__section--bottom">
+                        <button class="profile__list__button">
+                            <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28"
+                                class="mobile-menu__icon" width="28" height="28">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M4.6667 2.3334c-1.2887 0-2.3333 1.0446-2.3333 2.3333V10.5c0 1.2887 1.0446 2.3334 2.3333 2.3334H10.5c1.2887 0 2.3334-1.0447 2.3334-2.3334V4.6667c0-1.2887-1.0447-2.3333-2.3334-2.3333H4.6667Zm0 2.3333H10.5V10.5H4.6667V4.6667ZM17.5 2.3334c-1.2886 0-2.3333 1.0446-2.3333 2.3333V10.5c0 1.2887 1.0447 2.3334 2.3333 2.3334h5.8334c1.2886 0 2.3333-1.0447 2.3333-2.3334V4.6667c0-1.2887-1.0447-2.3333-2.3333-2.3333H17.5Zm0 2.3333h5.8334V10.5H17.5V4.6667ZM17.5 15.1667c-1.2886 0-2.3333 1.0447-2.3333 2.3333v5.8334c0 1.2886 1.0447 2.3333 2.3333 2.3333h5.8334c1.2886 0 2.3333-1.0447 2.3333-2.3333V17.5c0-1.2886-1.0447-2.3333-2.3333-2.3333H17.5Zm0 2.3333h5.8334v5.8334H17.5V17.5ZM4.6667 15.1667c-1.2887 0-2.3333 1.0447-2.3333 2.3333v5.8334c0 1.2886 1.0446 2.3333 2.3333 2.3333H10.5c1.2887 0 2.3334-1.0447 2.3334-2.3333V17.5c0-1.2886-1.0447-2.3333-2.3334-2.3333H4.6667Zm0 2.3333H10.5v5.8334H4.6667V17.5Z"
+                                    fill="#686C7C">
+                                </path>
+                            </svg>
+                        </button>
+                        <ul class="profile__list">
+                            <li class="profile__item">
+                                <a href="" class="profile__link active">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M16.0035 14.6236C15.6177 15.102 15.1849 15.5407 14.7118 15.9332L11.8803 13.1057C12.3894 12.754 12.8276 12.3097 13.172 11.7961L16.0035 14.6236Z" />
+                                        <path
+                                            d="M13.2938 16.9085C11.9746 17.6248 10.4969 18 8.99533 18C7.49374 18 6.01603 17.6248 4.69683 16.9085L7.72921 13.8804C8.14378 13.9849 8.56972 14.0377 8.9973 14.0377C9.42228 14.0377 9.84561 13.9848 10.2575 13.8804L13.2938 16.9085Z" />
+                                        <path
+                                            d="M6.1068 13.1057L3.2792 15.9293C2.80612 15.5382 2.37339 15.1008 1.98749 14.6236L4.81902 11.7961C5.16449 12.3076 5.60097 12.7514 6.1068 13.1057Z" />
+                                        <path
+                                            d="M18 8.98815C18.0011 10.457 17.64 11.9035 16.9486 13.2L13.8965 10.1483C13.9853 9.76794 14.0303 9.37869 14.0304 8.98815C14.0313 8.56216 13.9771 8.13784 13.8689 7.72577L16.9052 4.69371C17.6247 6.01098 18.0012 7.48768 18 8.98815Z" />
+                                        <path
+                                            d="M15.948 3.27797L13.1204 6.1016C12.7646 5.59745 12.3203 5.16178 11.809 4.81563L14.6406 1.98806C15.1182 2.37359 15.5562 2.80569 15.948 3.27797Z" />
+                                        <path
+                                            d="M13.2073 1.04426L10.1552 4.09598C9.39234 3.91764 8.59852 3.91764 7.83564 4.09598L4.77963 1.04819C6.07726 0.359914 7.52415 0 8.99346 0C10.4628 0 11.9097 0.359914 13.2073 1.04819V1.04426Z" />
+                                        <path
+                                            d="M6.18154 4.81956C5.66996 5.1653 5.2256 5.60105 4.87013 6.10553L2.04253 3.2819C2.43516 2.80917 2.87306 2.37584 3.35 1.98806L6.18154 4.81956Z" />
+                                        <path
+                                            d="M3.96442 8.98814C3.96263 9.3775 4.00758 9.76567 4.09832 10.1443L1.04231 13.1961C0.350535 11.8883 -0.00743932 10.4303 0.000117195 8.95126C0.00767371 7.47226 0.380528 6.01797 1.08563 4.7173L4.12195 7.74936C4.01894 8.15431 3.96604 8.57034 3.96442 8.98814Z" />
+                                        <path
+                                            d="M12.3528 8.98814C12.3528 9.07466 12.3528 9.16511 12.3528 9.25163C12.3166 9.71619 12.1824 10.1678 11.959 10.5769C11.6606 11.127 11.2147 11.5832 10.6712 11.8944C10.2427 12.1428 9.76332 12.2907 9.2692 12.3269C9.18256 12.3269 9.09198 12.3269 9.00534 12.3269C8.9187 12.3269 8.82418 12.3269 8.73361 12.3269C8.2392 12.2894 7.7598 12.1401 7.33162 11.8904C6.78946 11.5802 6.34586 11.1235 6.05172 10.573C5.82836 10.1681 5.6941 9.72032 5.65791 9.25949C5.65791 9.16773 5.65791 9.07728 5.65791 8.98814C5.65702 8.85001 5.66624 8.712 5.68547 8.57521C5.73928 8.13463 5.88124 7.70934 6.10292 7.32464C6.41448 6.78189 6.87132 6.33658 7.4222 6.03866C7.78893 5.84092 8.18978 5.71417 8.60365 5.66506C8.74196 5.64598 8.88146 5.63678 9.02109 5.63754C9.15286 5.63722 9.28447 5.64642 9.41491 5.66506C9.82946 5.71097 10.2309 5.83792 10.5964 6.03866C11.1479 6.33351 11.6061 6.77613 11.9196 7.31677C12.146 7.70535 12.2894 8.13648 12.341 8.58308C12.3549 8.71762 12.3589 8.85301 12.3528 8.98814Z" />
+                                    </svg>
+                                    <p>F.A.Q</p>
+                                </a>
+                            </li>
+                            <li class="profile__item">
+                                <a href="#" class="profile__link">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M7.09785 13.0117H10.9202V5.61969H13.3229L8.99057 0L4.67709 5.61969L7.09785 5.65846V13.0117ZM11.9985 9.36831V10.284C13.851 9.30554 16.102 7.272 16.9926 4.80462C17.8824 2.34185 15.6134 1.18062 15.6134 1.18062C16.8006 4.21662 11.9985 9.36831 11.9985 9.36831ZM17.633 5.53754C15.6751 9.33323 11.9985 10.8609 11.9985 10.8609V11.7138C15.4582 10.4206 17.1701 8.72123 17.7667 7.37723C18.3607 6.036 17.633 5.53754 17.633 5.53754ZM11.9985 12.2169V12.8797C14.9293 12.4431 16.4312 11.3012 17.2095 10.5065C17.9844 9.71077 17.4375 8.86523 17.4375 8.86523C14.8427 11.7997 11.9985 12.2169 11.9985 12.2169ZM9.11401 18C14.673 18 16.822 11.9132 16.822 11.9132C14.1733 13.4603 11.9985 13.4603 11.9985 13.4603C11.101 16.3597 9.11401 18 9.11401 18ZM10.9382 13.4908H7.09099C7.09099 13.4908 7.98849 16.6357 8.93657 16.6357C9.87778 16.6357 10.9382 13.4908 10.9382 13.4908ZM6.00148 10.284V9.36831C6.00148 9.36831 1.19939 4.21662 2.39005 1.18062C2.39005 1.18062 0.121019 2.34185 1.0108 4.80462C1.89802 7.26738 4.14476 9.30554 6.00148 10.284ZM6.00148 11.7185V10.8646C6.00148 10.8646 2.32491 9.33692 0.367038 5.54123C0.367038 5.54123 -0.360733 6.04062 0.233313 7.38462C0.826503 8.72492 2.53835 10.4243 6.00148 11.7185ZM6.00148 12.2169C6.00148 12.2169 3.15726 11.7997 0.565911 8.86523C0.565911 8.86523 0.015582 9.71077 0.793929 10.5065C1.56799 11.3012 3.07411 12.4394 6.00491 12.8797V12.2169H6.00148ZM6.00148 13.4603C6.00148 13.4603 3.82674 13.4603 1.1771 11.9132C1.1771 11.9132 3.32356 18 8.88599 18C8.88599 18 6.89898 16.3597 6.00148 13.4603Z" />
+                                    </svg>
+                                    <p>Upgrade</p>
+                                    <p class="new">new</p>
+                                </a>
+                            </li>
+                            <li class="profile__item">
+                                <a href="" class="profile__link">
+                                    <svg width="16" height="18" viewBox="0 0 16 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M13.4928 0H2.50718C1.12919 0 0 1.11789 0 2.48211V15.5179C0 16.8821 1.12919 18 2.50718 18H13.4928C14.8708 18 16 16.8821 16 15.5179V2.48211C16 1.11789 14.8708 0 13.4928 0ZM11.2919 13.7747H4.70813C4.2488 13.7747 3.86603 13.3958 3.86603 12.9411C3.86603 12.4863 4.2488 12.1074 4.70813 12.1074H11.2727C11.7321 12.1074 12.1148 12.4863 12.1148 12.9411C12.1148 13.3958 11.7512 13.7747 11.2919 13.7747ZM11.2919 9.83368H4.70813C4.2488 9.83368 3.86603 9.45474 3.86603 9C3.86603 8.54526 4.2488 8.16632 4.70813 8.16632H11.2727C11.7321 8.16632 12.1148 8.54526 12.1148 9C12.1148 9.45474 11.7512 9.83368 11.2919 9.83368ZM11.2919 5.87368H4.70813C4.2488 5.87368 3.86603 5.49474 3.86603 5.04C3.86603 4.58526 4.2488 4.20632 4.70813 4.20632H11.2727C11.7321 4.20632 12.1148 4.58526 12.1148 5.04C12.1148 5.49474 11.7512 5.87368 11.2919 5.87368Z" />
+                                    </svg>
+                                    <p>Contracts</p>
+                                </a>
+                            </li>
+                            <li class="profile__item">
+                                <a href="" class="profile__link">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M11.1941 14.3645C11.1809 14.3645 11.1544 14.3645 11.1412 14.3645H11.1148C11.1148 14.3645 11.0091 14.3508 10.7183 14.5148L10.5729 14.5968L10.4276 14.5695L8.98704 16.0592L7.55972 14.5831L7.44078 14.6105L7.2954 14.5285C7.01787 14.3645 6.89892 14.3781 6.89892 14.3781H6.87249C6.85927 14.3781 6.83284 14.3781 6.81963 14.3781C6.77998 14.8975 6.72712 15.2665 6.58174 15.4989L9.00025 18L11.432 15.4852C11.2866 15.2392 11.2205 14.8702 11.1941 14.3645ZM8.97382 0L6.51566 2.54214L6.81963 4.1549L8.97382 1.92711L11.1544 4.18223L11.4584 2.56948L8.97382 0ZM14.1016 5.30296L13.7976 6.91572L15.7932 8.9795L15.1589 9.63554L15.0003 10.4692C15.1192 10.5376 15.3571 10.6743 15.8461 10.8656L17.6699 8.9795L14.1016 5.30296ZM3.10595 8.00911L4.17644 6.88838L3.87248 5.27563L0.290964 8.99317L2.11476 10.8793C2.61697 10.6879 2.86807 10.5513 2.9738 10.4829L2.82842 9.69021L2.15441 8.99317L3.10595 8.00911Z" />
+                                        <path
+                                            d="M5.7357 14.3781L5.90751 15.3212L6.10575 15.2802C6.22469 15.2528 6.30399 14.8428 6.34364 14.0501C6.34364 14.0501 6.37007 13.9954 6.46258 13.9544C6.54188 13.9271 6.77976 13.8861 6.77976 13.8861C6.96478 13.8451 7.20267 13.9134 7.49342 14.0911L7.75774 14.0364L7.74452 13.9681C7.66523 13.5854 7.62558 13.3121 7.61236 13.2574C7.95598 12.9704 8.04849 12.7517 8.00884 12.5194C8.00884 12.5194 8.11457 12.492 8.20708 12.4783L8.15422 12.1777C8.00884 12.0137 7.82382 11.877 7.82382 11.877L5.93394 1.94076L6.05289 1.14805L6.02645 1.01138C5.85465 1.05238 5.74892 0.956708 5.70927 0.724362L5.57711 0.751697C5.14099 0.847369 5.1542 0.820034 4.85024 0.833702C4.0705 1.24372 3.68724 1.55808 3.70045 1.70842C3.72689 1.95443 3.75332 2.14577 3.79297 2.36445L4.652 6.91571C4.77094 7.54441 4.45376 7.95443 3.50222 8.33712C3.2379 8.43279 3.06609 8.5148 3.07931 8.61047L3.44935 10.5786C3.489 10.8246 2.6564 11.2209 0.925114 11.795C0.5815 11.8633 0.370045 11.7403 0.370045 11.7403L0 11.8223L0.568284 14.8018L0.832602 14.7471C0.925114 14.8155 0.925114 14.8975 0.951545 15.0068L1.01763 15.3348C1.36124 15.3622 1.34802 15.4168 1.69164 15.3348C2.15419 15.2255 4.38768 13.6947 4.46698 13.6674C4.53306 13.6401 4.5727 13.6264 4.7313 13.6127C5.1542 13.5854 5.62998 14.0364 5.7357 14.3781ZM4.25552 10.4966C3.83261 10.4282 3.59473 10.2369 3.54186 9.94987L3.30398 8.6788L3.60794 8.54213L3.93834 8.47379C4.38768 8.46012 4.63878 8.6378 4.71808 9.02049L4.78416 9.34851C4.83702 9.62186 4.87667 9.82687 4.58592 9.93621C4.58592 9.93621 4.41411 9.97721 4.24231 9.97721C3.97799 9.99088 3.97799 9.97721 3.67402 9.90887L3.71367 10.0592C3.97799 10.3326 4.652 10.3052 4.87667 10.2642C4.87667 10.2642 4.79738 10.3872 4.62557 10.4419C4.48019 10.4829 4.25552 10.4966 4.25552 10.4966Z" />
+                                        <path
+                                            d="M13.2687 13.6128C13.4141 13.6264 13.4669 13.6401 13.533 13.6674C13.6123 13.6948 15.8458 15.2392 16.3083 15.3348C16.652 15.4169 16.6387 15.3622 16.9824 15.3348L17.0484 15.0068C17.0616 14.9112 17.0616 14.8292 17.1674 14.7471L17.4317 14.8018L18 11.8223L17.6167 11.7403C17.6167 11.7403 17.4185 11.877 17.0616 11.795C15.3304 11.2346 14.4845 10.8246 14.5374 10.5786L14.9075 8.61048C14.9207 8.5148 14.7489 8.44647 14.4845 8.33713C13.533 7.96811 13.2158 7.54442 13.3348 6.91571L14.1938 2.36446C14.2334 2.14578 14.2599 1.95444 14.2863 1.70842C14.2995 1.55808 13.9163 1.24373 13.1365 0.833709C12.8193 0.820042 12.8326 0.847376 12.4096 0.765372L12.2775 0.738037C12.2378 0.956716 12.1321 1.05239 11.9603 1.02505L11.9339 1.16173L12.0528 1.95444L10.1629 11.8633C10.1629 11.8633 9.99114 12 9.83255 12.164L9.77968 12.4784C9.87219 12.492 9.97792 12.5194 9.97792 12.5194C9.93827 12.7517 10.0308 12.9704 10.3744 13.2574C10.3612 13.3121 10.3083 13.5718 10.2422 13.9681L10.229 14.0364L10.4933 14.0911C10.7841 13.9134 11.022 13.8451 11.207 13.8861C11.207 13.8861 11.4581 13.9134 11.5242 13.9544C11.6167 13.9954 11.6431 14.0501 11.6431 14.0501C11.6828 14.8428 11.7621 15.2528 11.881 15.2802L12.0793 15.3212L12.2511 14.3781C12.3436 14.0364 12.8326 13.5854 13.2687 13.6128ZM13.718 10.4966C13.718 10.4966 13.4934 10.4829 13.3612 10.4419C13.1894 10.3872 13.1101 10.2642 13.1101 10.2642C13.3348 10.3052 14.0088 10.3326 14.2731 10.0592L14.3127 9.90888C14.0088 9.97722 14.0088 9.99088 13.7445 9.97722C13.5726 9.96355 13.4008 9.93621 13.4008 9.93621C13.1101 9.82688 13.1497 9.62186 13.2026 9.34852L13.2687 9.0205C13.3348 8.65148 13.5991 8.4738 14.0484 8.4738L14.3788 8.54214L14.6828 8.67881L14.4449 9.94988C14.3788 10.2369 14.1409 10.4282 13.718 10.4966Z" />
+                                        <path
+                                            d="M2.64319 8.47895L3.10609 7.99987C2.89448 8.10937 2.6961 8.24625 2.64319 8.47895Z" />
+                                        <path
+                                            d="M14.8148 7.98181L15.3438 8.52934C15.3173 8.24189 15.0528 8.07763 14.8148 7.98181Z" />
+                                    </svg>
+                                    <p>Battles</p>
+                                </a>
+                            </li>
+                        </ul>
+
+
+                        <ul class="user__list">
+                            <li class="user-item user-item--ring border">
+                                <img src="./img/notification.png" alt="notification">
+                            </li>
+                            <li class="user-item user-item--profile">
+                                <a href="#">
+                                    <img class="user-img" src="./img/avatar.png" alt="avatar">
+                                </a>
+                                <div>
+                                    <p class="user-name">Marshmello</p>
+                                    <p class="user-balance">306.30 Р</p>
+                                </div>
+                            </li>
+                            <li class="user-item user-item--wallet">
+                                <button class="button-wallet button">
+                                    <span>Refill</span>
+                                    <img src="./img/wallet.png" alt="refill">
+                                </button>
+                            </li>
+                            <li class="user-item">
+                                <button class="button-exit button">
+                                    <img src="./img/logIn.png" alt="logIn">
+                                </button>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- main -->
+
+    <main class="main">
+        <div class="main__container">
+            <img class="main--bomb-left" src="./img/bombLeft.png" alt="bomb left">
+            <img class="main--bomb-center" src="./img/bombCenter.png" alt="bomb center">
+            <img class="main--bomb-right" src="./img/bombRight.png" alt="bomb right">
+
+            <div class="main__banner">
+                <div class="main__days border">
+                    <img src="./img/timer.png" alt="timer">
+                    <div class="main__day border">21 ДЕНЬ</div>
+                    <div class="main__hours">
+                        <p class="main__number border">2</p>
+                        <p class="main__number border">2</p>
+                    </div>
+                    <p class="main__colon">:</p>
+                    <div class="main__minutes">
+                        <p class="main__number border">4</p>
+                        <p class="main__number border">5</p>
+                    </div>
+                    <p class="main__colon">:</p>
+                    <div class="main__seconds">
+                        <p class="main__number border">1</p>
+                        <p class="main__number border">7</p>
+                    </div>
+                </div>
+
+                <div class="main__button">
+                    <button class="button__gift">Подарки 
+                        <img 
+                            class="gift-img" 
+                            src="./img/event.png"
+                            alt="event"
+                        >
+                    </button>
+                    <button class="button__event">Ивент 
+                        <img 
+                            class="event-img" 
+                            src="./img/basket.png"
+                            alt="busket"
+                        >
+                    </button>
+                </div>
+
+            </div>
+
+            <div class="main__hr">
+                <img class="hr--blackFriday" src="./img/black-friday.png" alt="black friday">
+            </div>
+        </div>
+
+        <!-- main cases -->
+
+        <div class="main__cases">
+            <ul class="cases__list">
+                <li class="cases__item">
+                    <a href="#">
+                        <img class="cases--img" src="./img/walking.png" alt="walking">
+                        <div class="price">
+                            <p class="new-price">19P</p>
+                            <p class="old-price">99P</p>
+                        </div>
+                        <div class="title">Прогулка</div>
+                    </a>
+                </li>
+                <li class="cases__item">
+                    <a href="#">
+                        <img class="cases--img" src="./img/exacerbation.png" alt="exacerbation">
+                        <div class="price">
+                            <p class="new-price">23P</p>
+                            <p class="old-price">56P</p>
+                        </div>
+                        <div class="title">Обострение</div>
+                    </a>
+                </li>
+                <li class="cases__item">
+                    <a href="#">
+                        <img class="cases--img" src="./img/macro.png" alt="macro">
+                        <div class="price">
+                            <p class="new-price">36P</p>
+                            <p class="old-price">43P</p>
+                        </div>
+                        <div class="title">Макро</div>
+                    </a>
+                </li>
+                <li class="cases__item">
+                    <a href="#">
+                        <img class="cases--img" src="./img/acid.png" alt="acid">
+                        <div class="price">
+                            <p class="new-price">86P</p>
+                            <p class="old-price">96P</p>
+                        </div>
+                        <div class="title">Ядовитый</div>
+                    </a>
+                </li>
+                <li class="cases__item">
+                    <a href="#">
+                        <img class="cases--img" src="./img/rainbow.png" alt="rainbow">
+                        <div class="price">
+                            <p class="new-price">44Р</p>
+                            <p class="old-price">53P</p>
+                        </div>
+                        <div class="title">Радуга</div>
+                    </a>
+                </li>
+                <li class="cases__item">
+                    <a href="#">
+                        <img class="cases--img" src="./img/meat.png" alt="meat">
+                        <div class="price">
+                            <p class="new-price">78P</p>
+                            <p class="old-price">83P</p>
+                        </div>
+                        <div class="title">Шашлык</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </main>
+
+    <!-- footer -->
+
+    <footer class="footer">
+        <div class="footer__container">
+            <img src="./img/charcter.png" alt="charcter" class="footer__img">
+            <div class="footer__top">
+                <div class="footer__main">
+                    <div class="footer__main-top">
+                        <div class="footer__copyright">© 2018-2021 GGDROP</div>
+                        <div class="footer__desc">Лучший опенкейс CS:GO</div>
+                    </div>
+                    <ul class="footer__nav">
+                        <li class="footer__nav-item">
+                            <a href="#">Пользовательское соглашение</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="#">Соглашение о приватности</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="#">Контакты</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="#">FAQ</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__info">
+                    <ul class="info__list">
+                        <li class="info__item info__item--opencases">
+                            <div class="info__item-number">431 182 539</div>
+                            <div class="info__item-text">Открыто кейсов</div>
+                        </li>
+                        <li class="info__item info__item--players">
+                            <div class="info__item-number">3 725 362</div>
+                            <div class="info__item-text">Игроков</div>
+                        </li>
+                        <li class="info__item info__item--contracts">
+                            <div class="info__item-number">5 626 767</div>
+                            <div class="info__item-text">Контрактов</div>
+
+                        </li>
+                        <li class="info__item info__item--upgrades">
+                            <div class="info__item-number">3 182 539</div>
+                            <div class="info__item-text">Апргрейдов</div>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="footer__cooparation">
+                    <a href="#" class="footer__cooparation-link">
+                        Сотрудничество
+                    </a>
+                </div>
+                <div class="footer__socials">
+                    <ul class="socials__list">
+                        <li class="socials__item">
+                            <a href="#" class="socials__item--link">
+                                <img src="./img/telegram.png" alt="telegram">
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="#" class="socials__item--link">
+                                <img src="./img/vk-footer.png" alt="instagram">
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="#" class="socials__item--link">
+                                <img src="./img/instagram.png" alt="tiktok">
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="#" class="socials__item--link">
+                                <img src="./img/youtube.png" alt="youtube">
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="#" class="socials__item--link">
+                                <img src="./img/tiktok-footer.png" alt="vk">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__contacts">
+                    <div class="footer__email">
+                        <a href="#" class="footer__contacts-email--link">
+                            support@ggdrop.com
+                        </a>
+                    </div>
+                    <div class="footer__contacts-adress">
+                        ITSFAIL LTD: Company number 13246765, 16 John Nicholas Crescent, Ellesmere Port, Cheshire,
+                        United Kingdom, CH65 2DL, +44 07308278693.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- scripts -->
+    
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="/script.js"></script>
+</body>
+
+</html>

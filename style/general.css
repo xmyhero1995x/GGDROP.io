@@ -1,0 +1,45 @@
+@import url(../fonts/GothamPro/stylesheet.css);
+@import url(../fonts/DINPro/stylesheet.css);
+
+@import url(./reset.css);
+@import url(./header.css);
+@import url(./main.css);
+@import url(./footer.css);
+
+body {
+    background: #1D1E2A;
+}
+.new {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #EA639C;
+    border-radius: 4px;
+    color: #FFFFFF;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-family: 'Gotham Pro';
+    font-size: 8px;
+    font-style: normal;
+    font-weight: 800;
+    height: 16px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: 8px;
+    text-transform: uppercase;
+    width: 31px;
+}
+
+.border {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 10px;
+    border: 1px solid #474754;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 10px;
+}
