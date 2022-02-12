@@ -7,7 +7,7 @@
     content: "";
     height: 375px;
     position: absolute;
-    top: 134px;
+    bottom: 0;
     width: 758.77px;
     z-index: 1;
 }
